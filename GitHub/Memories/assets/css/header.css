@@ -1,0 +1,33 @@
+header{
+    background: transparent;
+}
+h1{
+    font-size: 25px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5%;
+    align-items: center;
+}
+ul{
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    width: 35%;
+}
+li{
+    list-style: none;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 38px;
+    font-weight: bold;
+
+}
+nav a:hover{
+    color: orange;
+    border-top: 3px orange solid;
+}
