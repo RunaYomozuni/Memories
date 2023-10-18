@@ -12,19 +12,69 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="navbar">
                 <h1>The Power Of Memory</h1>
                 <ul>
                     <li><a href="index.html">ACCUEIL</a></li>
                     <li><a href="views/jeu.html">JEU</a></li>
                     <li><a href="views/classement.html">LES SCORES</a></li>
                     <li><a href="views/contact.html">NOUS CONTACTER</a></li>
+                    <li><a href="views/profil.html">MON ESPACE</a></li>
                 </ul>
             </nav>
         </header>
-
+    
         <main>
+            <div class="title-banner">
+                <div>NOUS CONTACTER</div>
+            </div>
 
+            <!-- /* -- CASES INFORMATIONS -- */ -->
+
+            <div class="bg-info">
+                <div class="box1">
+                    <div class="item1">
+                        <div class="item1-1"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <p class="color-info">06 05 04 03 02</p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="item2">
+                        <div class="item2-1"><i class="fa-regular fa-envelope"></i></div>
+                        <p class="color-info">support@powerofmemory.com</p>
+                    </div>
+                </div>
+                <div class="box3">   
+                    <div class="item3">
+                        <div class="item3-1"><i class="fa-solid fa-location-dot"></i></div>
+                        <p class="color-info">Paris</p>
+                    </div>
+                </div>
+                <script src="https://kit.fontawesome.com/f09ae54942.js" crossorigin="anonymous"></script>
+            </div>
+
+            <!-- /* -- FORMULAIRE -- */ -->
+
+            <div class="form-contact">
+                <form action="" method="post">
+                    <div class="two-case">
+                        <label for="name"></label>
+                        <input class="case-contact" type="text" name="name" id="name" placeholder="Nom">
+                        <label for="email"></label>
+                        <input class="case-contact" type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="sujet"></label>
+                        <input class="case-contact" type="text" name="sujet" id="sujet" placeholder="Sujet">
+                        <br>
+                        <textarea class="case-message" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <input class="submit-contact" type="button" value="Connexion"/>
+                    </div>
+                </form>
+            </div>
         </main>
 
         <footer>

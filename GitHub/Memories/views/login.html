@@ -17,18 +17,23 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <h1>The Power Of Memory</h1>
             <ul>
                 <li><a href="index.html">ACCUEIL</a></li>
                 <li><a href="views/jeu.html">JEU</a></li>
                 <li><a href="views/classement.html">LES SCORES</a></li>
                 <li><a href="views/contact.html">NOUS CONTACTER</a></li>
+                <li><a href="views/profil.html">MON ESPACE</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <div class="title-banner">
+            <div>Connexion</div>
+        </div>
+
         <!-- CRÉATION DU FORMULAIRE DE CONNEXION -->
         <div class="banner">
             <form action="" method="post">
@@ -38,8 +43,12 @@
                 <label for="password"></label>
                 <input class="case" type="password" name="password" id="password" placeholder="Mot de passe">
                 <br>
-                <input class="submit" type="button" value="Connexion" />
+                <input class="submit" type="button" value="Connexion"/>
             </form>
+        </div>
+
+        <div class="lien-inscription">
+            <p>Pas de compte ?<a class="lien" href="register.html">Se connecter</a></p>
         </div>
     </main>
 
@@ -53,7 +62,7 @@
                     <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <p class="info"><span>Tél :</span> 06 05 04 03 02</p>
                     <p class="info"><span>Email :</span> support@powerofmemory.com</p>
-                    <a class="location" href="https://www.google.com/maps/place/12+Av.+du+Maine,+75015+Paris/@48.8440234,2.3174032,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6703320cc5fd9:0x762d387157d77e74!8m2!3d48.8440199!4d2.3199781!16s%2Fg%2F11bw3x903j?entry=ttu"><span>Location :</span> 12 Avenue du Maine, PARIS 75015</a>
+                    <a class="location"><span>Location :</span> Paris</a>
                 </div>
                 
                 <div class="logo-sm">
