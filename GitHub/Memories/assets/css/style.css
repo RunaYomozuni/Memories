@@ -187,7 +187,7 @@ input{
     border-radius: 1px;
     background-color: #20173b;
     color: white;
-    width: 270px;
+    width: 320px;
     height: 190px;
     display: flex;
     flex-direction: column;
@@ -199,22 +199,21 @@ input{
 
 .form-contact {
     padding-top: 7rem;
-    padding-bottom: 6rem;
+    padding-bottom: 20rem;
     background-color: #181452;
     color: #343435;
-    font-size: 25p;
-    padding-left: 293px;
-
+    padding-left: 217px;
 }
 
 .case-contact {
     background-color: rgb(106, 99, 132);
-    padding: 12px 16px;
+    padding: 12px 24px;
     border: 0px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
     opacity: 0.7;
-    margin-right: 20px;
+    margin-right: 30px;
+    padding-right: 45px;
 }
 
 .two-case {
@@ -224,10 +223,39 @@ input{
     padding-right: 20px;
 }
 
-.case-message
+.case-sujet {
+    background-color: rgb(106, 99, 132);
+    padding: 12px 24px;
+    padding-right: 307px;
+    border: 0px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+}
+
+.case-message {
+    background-color: rgb(106, 99, 132);
+    padding: 12px 24px;
+    border: 0px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    opacity: 0.7;
+}
 
 .submit-contact {
-    
+    display: flex;
+    width: 26%;
+    background-color: #ec9123;
+    border: 0px solid #ccc;
+    padding: 12px 16px;
+    border-radius: 3px;
+    background-color: #ec9123;
+    color: white;
+    text-decoration: none;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 13px;
 }
 
 
