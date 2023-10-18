@@ -4,48 +4,57 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inscription</title>
-        <link rel="stylesheet" href="../assets/css/inscription.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body> 
         <!-- navbar -->
         <nav class="navbar">
             <h1>The Power Of Memory</h1>
             <ul>
-                <li><a href="index.html">acceuil</a></li>
-                <li><a href="views/jeu.html">jeu</a></li>
-                <li><a href="views/classement.html">score</a></li>
-                <li><a href="views/contact.html">nous contacter</a></li>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="views/jeu.html">JEU</a></li>
+                <li><a href="views/classement.html">LES SCORES</a></li>
+                <li><a href="views/contact.html">NOUS CONTACTER</a></li>
+                <li><a href="views/profile.html">MON ESPACE</a></li>
             </ul>
         </nav>
-        <div class="banner">
-            <!--Partie bannière-->
-            <div class="title">Inscription</div>
+        
+        <main>
+            <div class="banner">
+                <!--Partie bannière-->
+                <div>Inscription</div>
+            </div>
 
-        </div>
-        <div class="identifiants">
-            <!--Cors de texte de la partie des identifiants-->
-            <form class="inscriptionForm">
-                <input class="case" type="email" id="email" name="email" placeholder="Email"><br>
-                <input class="case" type="text" id="name" name="name" placeholder="Pseudo"><br>
-                <input class="case" type="password" id="password" name="password" placeholder="Mot de passe"><br>
-                <input class="case" type="password" id="password" name="password" placeholder="Confirmer le mot de passe"><br>
-                <input class="submit" type="submit" value="Inscription">
+            <div class="identifiants">
+                <!--Cors de texte de la partie des identifiants-->
+                <form action="" method="post">
+                    <input class="case" type="email" id="email" name="email" placeholder="Email"><br>
+                    <input class="case" type="text" id="name" name="name" placeholder="Pseudo"><br>
+                    <input class="case" type="password" id="password" name="password" placeholder="Mot de passe"><br>
+                    <input class="case" type="password" id="password" name="password" placeholder="Confirmer le mot de passe"><br>
+                    <input class="submit" type="submit" value="Inscription">
+                </form>
+            </div>
+            <div class="lien-connexion">
+                <p>Déjà un compte ?<a class="lien" href="login.html">Créer un compte</a></p>
+            </div>
+        </main>
 
-            </form>
-            
-        </div>
         <footer>
             <!-- CRÉATION DU FOOTER (CONTACT) -->
         <div class="ap5">
-            <div class="ap1">
-                <div class="ap3">
+            <div>
+                <div>
                     <h2 class="title-foot">Information</h2>
                     
                     <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque assumenda quae error dolor.</p>
                     <p class="info"><span>Tél :</span> 06 05 04 03 02</p>
                     <p class="info"><span>Email :</span> support@powerofmemory.com</p>
-                    <a class="location" href="https://www.google.com/maps/place/12+Av.+du+Maine,+75015+Paris/@48.8440234,2.3174032,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6703320cc5fd9:0x762d387157d77e74!8m2!3d48.8440199!4d2.3199781!16s%2Fg%2F11bw3x903j?entry=ttu"><span>Location :</span> 12 Avenue du Maine, PARIS 75015</a>
+                    <a class="location"><span>Location :</span> 12 Avenue du Maine, PARIS 75015</a>
                 </div>
                 
                 <div class="logo-sm">
@@ -61,7 +70,7 @@
             
 
             <div class="ap2">
-                <div class="ap4">
+                <div>
                     <h2 class="title-foot">Power Of Memory</h2>
                     
                     <ul class="list-ap">
