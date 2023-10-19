@@ -1,7 +1,11 @@
 * {
-    margin: 0;
+    
     padding: 0;
     box-sizing: border-box;
+}
+
+main {
+    margin: 0;
 }
 
 body {
@@ -258,81 +262,124 @@ input{
     font-size: 13px;
 }
 
+/* MAIN PAGE PROFIL */
+
+
+.espace {
+    color: white;
+    /* width: 270px; */
+    height: 400px;
+    display: flex;
+}
+
+.tr-espace {
+    display: flex;
+    text-align: left;
+}
+
+.th-espace {
+    padding: 20px;
+    padding-top: 20px;
+    width: 270px;
+}
+
+.th-espace:hover {
+    background-color: #181452;
+    width: 270px;
+}
+
+.banner-profil {
+    /* padding-top: 7rem;
+    padding-bottom: 6rem;
+    background-color: #181452;
+    color: #343435; */
+    background-color: #181452;
+    
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 0;
+}
+
+.form-profil {
+    
+}
+
+.submit-profil {
+    display: flex;
+    width: 27%;
+    background-color: #ec9123;
+    border: 0px solid #ccc;
+    padding: 12px 16px;
+    border-radius: 3px;
+    background-color: #ec9123;
+    color: white;
+    text-decoration: none;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* MAIN PAGE PROFIL -  */
+
 
 /* FOOTER */
 
 footer {
     background-color: #20173b;
-    width: 100vw;
-    height: 43vh;
-}
-
-span {
-    color: #ec9123;
-}
-
-.info {
-    color: rgb(188, 181, 181); 
-}
-
-.title-foot {
-    color: white;
+    margin-top: 7%;
 }
 
 .ap5 {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 80px;
     color: #ec9123;
-}
-
-.ap2 {
-    display: flex;
+    padding-bottom: 70px;
 }
 
 .list-ap {
     width: 300px;
     flex-direction: column;
-    gap: 20px;
 }
 
-.liste-ap li {
+.list-ap li {
     list-style: square;
+    margin: 3% 0;
 }
 
 .logo-sm {
+    font-size: 30px;
     display: flex;
-    gap: 10px;
+    margin-top: 20px;
 }
-
-.logo-sm a {
+footer li a{
     text-decoration: none;
+    color: white;
+    opacity: 0.7;
 }
 
-.logo {
-    border-radius: 3px;
-    height: 2rem;
-    width: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ap3 a,p,.logo,.title-foot{
+    color: rgb(188, 181, 181);
+}
+.logo-sm a{
+    background-color: #ec9123;
+    margin-right: 15px;
+    padding: 1.5% 2.5%;
+    border-radius: 5%;
+    font-size: 20px;
 }
 
-.underline {
-    text-decoration: none;
-    color: rgb(188, 181, 181); 
+.title-foot {
+    font-size: 25px;
+    color: white;
 }
-
 .location {
     text-decoration: none;
     color: rgb(188, 181, 181);
 }
-
-.location span {
-    font-weight: bold;
-}
-
-.info span {
+span{
     color: #ec9123;
-    font-weight: bold;
+    font-weight: 100;
 }

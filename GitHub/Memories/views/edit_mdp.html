@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Connexion</title>
+        <title>Mon espace</title>
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/css/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     </head>
-
     <body>
         <header>
             <nav class="navbar">
@@ -30,26 +25,37 @@
         </header>
 
         <main>
-            <!-- /* CRÉATION BANNIÈRE -->
+            <!-- /* CRÉATION BANNIÈRE */ -->
             <div class="title-banner">
-                <div>Connexion</div>
+                <div>MON ESPACE</div>
             </div>
 
-            <!-- CRÉATION DU FORMULAIRE DE CONNEXION -->
-            <div class="banner">
-                <form action="" method="post">
-                    <label for="email"></label>
-                    <input class="case" type="email" name="email" id="email" placeholder="Email">
-                    <br>
-                    <label for="password"></label>
-                    <input class="case" type="password" name="password" id="password" placeholder="Mot de passe">
-                    <br>
-                    <input class="submit" type="button" value="Connexion"/>
-                </form>
-            </div>
+            <div class="espace">
+                <table>
+                    <tr class="tr-espace">
+                        <a href="./profil.html"><th class="th-espace">Mes informations personnelles</th></a>
+                    </tr>
 
-            <div class="lien-inscription">
-                <p>Pas de compte ?<a class="lien" href="register.html">Se connecter</a></p>
+                    <tr class="tr-espace">
+                        <a href="./edit_email.html"></a><th class="th-espace">Changer mon email</th></a>
+                    </tr>
+                    
+                    <tr class="tr-espace">
+                        <a href="./edit_mdp.html"><th class="th-espace">Changer mon mot de passe</th></a>
+                    </tr>
+                </table>
+
+                <div class="banner-profil">
+                    <form class="form-profil" action="" method="post">
+                        <label for="password"></label>
+                        <input class="case" type="password" name="password" id="password" placeholder="Ancien mot de passe">
+                        <br>
+                        <label for="password"></label>
+                        <input class="case" type="password" name="password" id="password" placeholder="Nouveau mot de passe">
+                        <br>
+                        <input class="submit-profil" type="button" value="Confirmer"/>
+                    </form>
+                </div>
             </div>
         </main>
 
@@ -89,5 +95,4 @@
             </div>
         </footer>
     </body>
-
 </html>
