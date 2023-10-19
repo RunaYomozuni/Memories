@@ -275,6 +275,11 @@ input{
     display: flex;
 }
 
+.espace-form-text {
+    text-decoration: none;
+    color: white;
+}
+
 .tr-espace {
     display: flex;
     text-align: left;
@@ -327,6 +332,7 @@ input{
 /* MAIN PAGE PROFIL INFOS PERSO */
 
 /* ajouter la civilité */
+/* modifier la width sous les formulaires des 3 pages */
 
 .perso-info {
     background-color: #181452;
