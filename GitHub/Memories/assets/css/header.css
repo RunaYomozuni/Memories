@@ -1,8 +1,8 @@
 header{
     background: transparent;
 }
-h1{
-    font-size: 25px;
+h2{
+    font-size: 150%;
 }
 nav{
     display: flex;
@@ -16,7 +16,7 @@ ul{
     justify-content: space-evenly;
     width: 35%;
 }
-li{
+nav li{
     list-style: none;
 }
 nav a{
