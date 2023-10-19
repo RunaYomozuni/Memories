@@ -264,6 +264,9 @@ input{
 
 /* MAIN PAGE PROFIL */
 
+.tab-form {
+    padding-top: 20px;
+}
 
 .espace {
     color: white;
@@ -294,18 +297,17 @@ input{
     background-color: #181452;
     color: #343435; */
     background-color: #181452;
-    
+    padding-bottom: 30p;
     width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    margin: 0;
 }
 
-.form-profil {
+/* .form-profil {
     
-}
+} */
 
 .submit-profil {
     display: flex;
@@ -322,8 +324,47 @@ input{
     font-size: 13px;
 }
 
-/* MAIN PAGE PROFIL -  */
+/* MAIN PAGE PROFIL INFOS PERSO */
 
+/* ajouter la civilité */
+
+.perso-info {
+    background-color: #181452;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+/* .perso-prenom, .perso-email {
+    
+} */
+
+.perso-box1, .perso-box2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.perso-prenom, .perso-name, .perso-email, .perso-num {
+    margin-right: 60px;
+}
+
+/* .perso-email {
+
+} */
+
+/* .perso-num {
+
+} */
+
+.perso-prenom-case, .perso-name-case, .perso-email-case, .perso-num-case {
+    border: 0px solid white;
+    border-radius: 3px;
+    background-color: rgb(106, 99, 132);
+    padding: 12px 16px;
+    width: 250px;
+}
 
 /* FOOTER */
 
