@@ -3,8 +3,6 @@ footer {
     margin-top: 7%;
 }
 
-
-
 .ap5 {
     display: flex;
     justify-content: space-evenly;
@@ -34,7 +32,7 @@ footer li a{
 }
 
 .ap3 a,p,.logo,.title-foot{
-    color: white;
+    color: rgb(188, 181, 181);
 }
 .logo-sm a{
     background-color: #ec9123;
@@ -51,4 +49,8 @@ footer li a{
 span{
     color: #ec9123;
     font-weight: 100;
+}
+.title-foot{
+    font-size: 25px;
+    color: white;
 }

@@ -1,5 +1,7 @@
-#acceuil{
+*{
     font-family: 'Poppins', sans-serif;
+}
+#acceuil,#jeu{
     background-color: #20173b;
 }
 #acceuil #grandeImage{
@@ -196,6 +198,38 @@ hr {
     background-clip: padding-box;
     box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
   }
+
+#jeu #gameBox{
+    background-color:#20173b;
+    margin: 0 auto;
+}
+#jeu .blur{
+    filter: blur(6px);
+}
+#jeu tbody{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+#jeu td{
+    width: 90px;
+    height: 130px;
+    border: 1px black solid;
+    background-color: white;
+}
+#jeu #play{
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: inline;
+    margin: 0 auto;
+    top: 350px;
+    left: 672px;
+    z-index: 1;
+}
+#jeu .cancelBlur{
+    filter: none;
+}
 
   @media screen and (max-width: 400px) {
     #acceuil header{
