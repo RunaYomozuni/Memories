@@ -208,14 +208,16 @@ hr {
 }
 #jeu tbody{
     text-align: center;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
+    width: 70%;
 }
 #jeu td{
     width: 90px;
-    height: 130px;
-    border: 1px black solid;
-    background-color: white;
+    height: 137px;
+    background-image: url(../images/memory/dosCarte.jpeg);
+    background-size: cover;
 }
 #jeu #play{
     border: none;
@@ -230,8 +232,14 @@ hr {
 #jeu .cancelBlur{
     filter: none;
 }
+#jeu #timer{
+    color: white;
+    position: relative;
+    left: 100px;
+    font-size: 30px;
+}
 
-  @media screen and (max-width: 400px) {
+  @media (min-width: 480px) and (max-width: 720px) {
     #acceuil header{
         height: 100px;
     }
@@ -243,7 +251,7 @@ hr {
         padding: 0;
     }
     #acceuil #galerie img{
-        height: 192px;
+        height: 186px;
     }
     #acceuil #grandeImage{
         width: 476px;
