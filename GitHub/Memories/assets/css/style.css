@@ -1,0 +1,271 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+#acceuil,#jeu{
+    background-color: #20173b;
+}
+#acceuil #grandeImage{
+    background-image: url(../images/grandeImage.png);
+    background-size: cover;
+    color: white;
+}
+#acceuil main{
+    height: 700px;
+}
+#acceuil #intro{
+    text-align: center;
+}
+h1{
+    line-height: 90%;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 760%;
+}
+#acceuil #intro p{
+    opacity: 0.7;
+    margin: 30px 0 ;
+}
+#acceuil #intro button{
+    border: none;
+    height: 60px;
+    width: 180px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+}
+#acceuil #container{
+    padding: 0 10%;
+    margin-top: 8%;
+    color: white;
+}
+#acceuil #galerie{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+#acceuil #galerie img{
+    width: 250px;
+    height: 380px;
+}
+#acceuil #galerie img:nth-of-type(1){
+    width: 520px;
+}
+#acceuil #lorem{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    margin-bottom: 15%;
+}
+h3{
+    display: inline;
+    font-weight: bold;
+}
+#acceuil #lorem article{
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#acceuil #lorem span{
+    color: blueviolet;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+#acceuil #lorem p{
+    opacity: 0.7;
+}
+#acceuil #imgChiffre img{
+    width: 100%;
+}
+#acceuil #containerChiffre div{
+    width: 47%;
+}
+#acceuil #containerChiffre{
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+#acceuil #chiffreCle{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#acceuil #chiffreCle div{
+    margin: 7px;
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#acceuil #containerChiffre span{
+    font-size: 30px;
+    color: white;
+}
+#acceuil #containerChiffre p{
+    margin: 0;
+}
+#acceuil #parties{
+    background-color: blueviolet;
+}
+
+#acceuil #connecter{
+    background-color: limegreen;
+}
+
+#acceuil #record{
+    background-color: darkmagenta;
+}
+
+#acceuil #inscrits{
+    background-color: orange;
+}
+
+#acceuil #equipes,#acceuil .reseaux ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+#acceuil .reseaux ul{
+    width: 100%;
+}
+#acceuil .reseaux li{
+    list-style: none;
+}
+#acceuil #equipe span{
+    color: white;
+}
+#acceuil #equipe{
+    text-align: center;
+}
+#acceuil .equipe{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #20192b;
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+#acceuil h4{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#acceuil #equipe span{
+    opacity: 0.7;
+    margin-top: 5%;
+}
+
+#acceuil .equipe img{
+    border-radius: 50%;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.accessory:before, .accessory:after { content: ''; }
+
+hr {
+    border: 0;
+    margin: 4.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+  }
+
+  .accessory {
+    height: 6px;
+    background-image: radial-gradient(
+      closest-side,
+      hsla(0, 0%, 50%, 1.0),
+      hsla(0, 0%, 50%, 0) 100%);
+    position: relative;
+  }
+  .accessory:after {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    display:block;
+    background-color: hsl(0, 0%, 75%);
+    height: 12px;
+    width:  12px;
+    transform: rotate(45deg);
+    margin-top:  -10px;
+    margin-left: -10px;
+    border-radius: 4px 0;
+    border: 4px solid hsla(0, 0%, 100%, 0.35);
+    background-clip: padding-box;
+    box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+  }
+
+#jeu #gameBox{
+    background-color:#20173b;
+    margin: 0 auto;
+}
+#jeu .blur{
+    filter: blur(6px);
+}
+#jeu tbody{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70%;
+}
+#jeu td{
+    width: 90px;
+    height: 137px;
+    background-image: url(../images/memory/dosCarte.jpeg);
+    background-size: cover;
+}
+#jeu #play{
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: inline;
+    margin: 0 auto;
+    top: 350px;
+    left: 672px;
+    z-index: 1;
+}
+#jeu .cancelBlur{
+    filter: none;
+}
+#jeu #timer{
+    color: white;
+    position: relative;
+    left: 100px;
+    font-size: 30px;
+}
+
+  @media (min-width: 480px) and (max-width: 720px) {
+    #acceuil header{
+        height: 100px;
+    }
+    #acceuil h1{
+        font-size: 259%;
+        margin-top: 10%;
+    }
+    #acceuil #container{
+        padding: 0;
+    }
+    #acceuil #galerie img{
+        height: 186px;
+    }
+    #acceuil #grandeImage{
+        width: 476px;
+    }
+    #acceuil h2{
+        font-size: 100%;
+    }
+    #acceuil nav a {
+        font-size: 70%;
+    }
+    #acceuil ul{
+        width: 230px;
+    }
+    #acceuil main{
+        height: 300px;
+    }
+}
