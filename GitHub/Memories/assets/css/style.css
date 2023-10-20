@@ -71,6 +71,37 @@ h1,ul {
     background-position: center;
 }
 
+@media screen and (max-width: 720px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .navElements {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .ap5 {
+        flex-direction: column;
+        justify-content: center !important;
+        margin-left: 2rem;
+    }
+
+    .ap4 {
+        padding-top: 30px;
+    }
+
+}
+
+/* @media screen and (max-width: 1087px) {
+    .navElements {
+        flex-direction: row;
+    }
+} */
+
 /* MAIN LOGIN PAGE */
 
 .banner {
@@ -115,7 +146,7 @@ input{
 
 .submit {
     display: flex;
-    width: 22%;
+    width: 100px;
     background-color: #ec9123;
     border: 0px solid #ccc;
     padding: 12px 16px;
@@ -249,7 +280,7 @@ input{
 
 .submit-contact {
     display: flex;
-    width: 26%;
+    width: 100px;
     background-color: #ec9123;
     border: 0px solid #ccc;
     padding: 12px 16px;
@@ -302,8 +333,8 @@ input{
     background-color: #181452;
     color: #343435; */
     background-color: #181452;
-    padding-bottom: 30p;
     width: 1200px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,7 +347,7 @@ input{
 
 .submit-profil {
     display: flex;
-    width: 27%;
+    width: 95px;
     background-color: #ec9123;
     border: 0px solid #ccc;
     padding: 12px 16px;
@@ -331,15 +362,13 @@ input{
 
 /* MAIN PAGE PROFIL INFOS PERSO */
 
-/* ajouter la civilité */
-/* modifier la width sous les formulaires des 3 pages */
-
 .perso-info {
     background-color: #181452;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-top: 50px;
+    height: 470px;
 }
 
 /* .perso-prenom, .perso-email {
