@@ -15,7 +15,7 @@ h1{
     height: 5.8rem; /*equivalant à 80px environ*/
 }
 
-ul{
+.navElements{
     display: flex;
     padding: 0;
     justify-content: space-evenly;
@@ -37,7 +37,47 @@ nav a:hover{
     color: orange;
     border-top: 3px orange solid;
 }
-h1,ul{
+
+/* Media query pour rendre la navbar, footer, button submit responsive */
+@media screen and (max-width: 768px) { /* Ajuster les élements lorsque qu'on réduit la taille de l'écran*/
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .navElements {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px; /* Ajustez la taille de la police pour les écrans plus petits */
+    }
+
+    .ap5{
+        flex-direction: column;
+        justify-content: center !important;
+        margin-left: 2rem;
+    }
+
+    .submit{
+        width: 100% !important;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1256px) {
+    .navElements {
+        gap: 10px;
+        text-align: center;
+        text-wrap: wrap;
+    }
+}
+
+
+h1,.navElements{
     margin: 0;
 }
 /*Partie du code de la bannière*/
@@ -86,7 +126,7 @@ form{
 }
 .submit{
     display: flex;
-    width: 19%;
+    width: 100px;
     background-color: orange;
     border: 0px solid #ccc;
     border-radius: 3px;
@@ -203,7 +243,6 @@ footer li a{
     color: white;
     opacity: 0.7;
 }
-
 .ap3 a,p,.logo,.title-foot{
     color: rgb(188, 181, 181);
 }
@@ -228,3 +267,4 @@ span{
     color: #ec9123;
     font-weight: 100;
 }
+
