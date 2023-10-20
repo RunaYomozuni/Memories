@@ -39,7 +39,7 @@ nav a:hover{
 }
 
 /* Media query pour rendre la navbar, footer, button submit responsive */
-@media screen and (max-width: 768px) { /* Ajuster les élements lorsque qu'on réduit la taille de l'écran*/
+@media screen and (max-width: 768px) { /* Ajuster élements quand on réduit la taille de l'écran*/
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -52,7 +52,7 @@ nav a:hover{
     }
 
     nav a {
-        font-size: 16px; /* Ajustez la taille de la police pour les écrans plus petits */
+        font-size: 16px;
     }
 
     .ap5{
@@ -60,12 +60,6 @@ nav a:hover{
         justify-content: center !important;
         margin-left: 2rem;
     }
-
-    .submit{
-        width: 100% !important;
-        justify-content: center;
-    }
-
 }
 
 @media screen and (max-width: 1256px) {
@@ -220,6 +214,10 @@ footer {
     justify-content: space-evenly;
     color: #ec9123;
     padding-bottom: 70px;
+
+}
+.ap4{
+    padding-top: 30px;
 }
 
 
