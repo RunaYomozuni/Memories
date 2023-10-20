@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contactez nous</title>
+        <title>Mon espace</title>
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/css/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,59 +23,39 @@
                 </ul>
             </nav>
         </header>
-    
+
         <main>
-            <!-- /* CRÉATION BANNIÈRE -->
+            <!-- /* CRÉATION BANNIÈRE */ -->
             <div class="title-banner">
-                <div>NOUS CONTACTER</div>
+                <div>MON ESPACE</div>
             </div>
 
-            <!-- /* -- CASES INFORMATIONS -- */ -->
+            <div class="espace">
+                <table class="tab-form">
+                    <tr class="tr-espace">
+                        <th class="th-espace"><a class="espace-form-text" href="./profil.html">Mes infos personnelles</a></th>
+                    </tr>
 
-            <div class="bg-info">
-                <div class="box1">
-                    <div class="item1">
-                        <div class="item1-1"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                        <p class="color-info">06 05 04 03 02</p>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="item2">
-                        <div class="item2-1"><i class="fa-regular fa-envelope"></i></div>
-                        <p class="color-info">support@powerofmemory.com</p>
-                    </div>
-                </div>
-                <div class="box3">   
-                    <div class="item3">
-                        <div class="item3-1"><i class="fa-solid fa-location-dot"></i></div>
-                        <p class="color-info">Paris</p>
-                    </div>
-                </div>
-                <script src="https://kit.fontawesome.com/f09ae54942.js" crossorigin="anonymous"></script>
-            </div>
+                    <tr class="tr-espace">
+                        <th class="th-espace"><a class="espace-form-text" href="./edit_email.html">Changer mon email</a></th>
+                    </tr>
+                    
+                    <tr class="tr-espace">
+                        <th class="th-espace"><a class="espace-form-text" href="./edit_mdp.html">Changer mon mot de passe</a></th>
+                    </tr>
+                </table>
 
-            <!-- /* -- FORMULAIRE -- */ -->
-
-            <div class="form-contact">
-                <form action="" method="post">
-                    <div class="two-case">
-                        <label for="name"></label>
-                        <input class="case-contact" type="text" name="name" id="name" placeholder="Nom">
-                        <label for="email"></label>
-                        <input class="case-contact" type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="sujet"></label>
-                        <input class="case-sujet" type="text" name="sujet" id="sujet" placeholder="Sujet">
+                <div class="banner-profil">
+                    <form class="form-profil" action="" method="post">
+                        <label for="password"></label>
+                        <input class="case" type="password" name="password" id="password" placeholder="Ancien mot de passe">
                         <br>
-                        <textarea class="case-message" name="message" id="message" cols="56" rows="7" placeholder="Message"></textarea>
-                    </div>
-                    <br>
-                    <div>
-                        <input class="submit-contact" type="button" value="Connexion"/>
-                    </div>
-                </form>
+                        <label for="password"></label>
+                        <input class="case" type="password" name="password" id="password" placeholder="Nouveau mot de passe">
+                        <br>
+                        <input class="submit-profil" type="button" value="Confirmer"/>
+                    </form>
+                </div>
             </div>
         </main>
 
