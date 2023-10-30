@@ -1,17 +1,23 @@
 <?php
 function connectToDbAndGetPdo()
 {
-    $servername = 'localhost';
-    $username = 'root';
-    $password = '';
-    $database = "PowerOfMemory";
-
-    $connection = new mysqli($servername, $username, $password, $database);
-    if ($connection->connect_error) {
-        echo 'échec de la connection <br>';
-        die('Erreur : ' . $connection->connect_error);
+    $dbname = 'dbName';
+    $host = 'localhost';
+    
+    $dsn = "mysql:dbname=$dbname;host=$host;charset=utf8";
+    $user = 'root';
+    $pass = '';
+    
+    $driver_options = [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
+    ];
+    
+    try {
+        $pdo = new PDO($dsn, $user, $pass, $driver_options);
+        return $pdo;
+    } catch (PDOException $e) {
+        echo 'La connexion à la base de données a échouée.';
     }
-    //ON RENVOIE LA CONNECTION
-    return $connection;
 }
 ?>
