@@ -2,7 +2,7 @@
         <div class="ap5">
             <div class="ap1">
                 <div class="ap3">
-                    <p class="title-foot">Infomation</p>
+                    <p class="title-foot">Informations</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p><span>Tél :</span> 06 05 04 03 02</p>
                     <p><span>Email :</span> support@powerofmemory.com</p>
@@ -23,9 +23,9 @@
                 <div class="ap4">
                     <p class="title-foot">Power Of Memory</p>
                     <ul class="list-ap">
-                        <li><a class="underline" href="../Memories/views/Jeu.html">Jouer !</a></li>
-                        <li><a class="underline" href="../Memories/views/score.html">Les scores</a></li>
-                        <li><a class="underline" href="../Memories/views/contact.html">Nous contacter</a></li>
+                        <li><a class="underline" href="<?= PROJECT_FOLDER ?>games/memory/index.php">Jouer !</a></li>
+                        <li><a class="underline" href="<?= PROJECT_FOLDER ?>games/memory/score.php">Les scores</a></li>
+                        <li><a class="underline" href="<?= PROJECT_FOLDER ?>contact.php">Nous contacter</a></li>
                     </ul>
                 </div>
             </div>

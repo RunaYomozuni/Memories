@@ -3,12 +3,14 @@ header{
 }
 h2{
     font-size: 150%;
+    color: white;
 }
 nav{
     display: flex;
     justify-content: space-around;
     padding-top: 1.5%;
     align-items: center;
+    padding-bottom: 20px;
 }
 ul{
     display: flex;
