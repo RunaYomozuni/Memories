@@ -20,4 +20,9 @@ function connectToDbAndGetPdo()
         echo 'La connexion à la base de données a échouée.';
     }
 }
+
+$pdo = connectToDbAndGetPdo();
+$pdoStatement = $pdo->prepare('SELECT * FROM user WHERE id = 1');
+var_dump($user->nickName); // => 'Groot'
+var_dump($user->email); // => 'groot@example.com'
 ?>

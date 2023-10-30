@@ -1,12 +1,14 @@
+<?php require_once '../../utils/common.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php
-        require_once 'partials/head.php';
+        require_once SITE_ROOT . 'partials/head.php';
     ?>
     <body> 
         <!-- navbar -->
         <?php
-        require_once 'partials/header.php';
+        require_once SITE_ROOT . 'partials/header.php';
     ?>
         
         <main>
@@ -31,7 +33,7 @@
         </main>
 
         <?php
-        require_once 'partials/footer.php';
+        require_once SITE_ROOT . 'partials/footer.php';
     ?>
     </body>
 </html>

@@ -1,13 +1,15 @@
+<?php require_once '../../utils/common.php';
+?>
 <!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
 <?php
-        require_once 'partials/head.php';
+        require_once SITE_ROOT . 'partials/head.php';
     ?>
 
     <body id="acceuil">
         <div id="grandeImage">
         <?php
-        require_once 'partials/header.php';
+        require_once SITE_ROOT . 'partials/header.php';
     ?>
     
     <main>
@@ -114,7 +116,7 @@
     </div>
     </main>
     <?php
-        require_once 'partials/footer.php';
+        require_once  SITE_ROOT . 'partials/footer.php';
     ?>
     </body>
 </html>
