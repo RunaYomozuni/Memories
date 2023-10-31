@@ -75,7 +75,7 @@
             <div id="equipes">
         <div class="equipe">
             <img src="assets/images/saturn.jpeg" alt="">
-            <span>hamilton</span>
+            <span>Hamilton</span>
             <p>Games developer</p>
             <div class="reseaux">
                 <ul>
@@ -88,7 +88,7 @@
     
         <div class="equipe">
             <img src="assets/images/neptune.jpeg" alt="">
-            <span>mickhel</span>
+            <span>Mickhel</span>
             <p>Games developer</p>
             <div class="reseaux">
                 <ul>
@@ -101,7 +101,7 @@
 
             <div class="equipe">
                 <img src="assets/images/jupiter.jpeg" alt="">
-                <span>arnold</span>
+                <span>Arnold</span>
                 <p>Games developer</p>
                 <div class="reseaux">
                     <ul>
