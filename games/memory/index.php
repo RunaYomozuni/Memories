@@ -96,5 +96,5 @@
         require_once SITE_ROOT. 'partials/footer.php';
     ?>
 	</body>
-	<script src="../assets/js/script.js"></script>
+	<script src="<?= PROJECT_FOLDER ?>assets/js/script.js"></script>
 </html>

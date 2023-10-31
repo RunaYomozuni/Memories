@@ -1,6 +1,6 @@
 <header>
     <nav>
-        <h2>The Power Of Memory</h1>
+        <h2>The Power Of Memory</h2>
         <ul>
             <li><a href="<?= PROJECT_FOLDER ?>index.php">ACCUEIL</a></li>
             <li><a href="<?= PROJECT_FOLDER ?>games/memory/index.php">JEU</a></li>
