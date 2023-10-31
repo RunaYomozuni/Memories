@@ -6,6 +6,7 @@
             <li><a href="<?= PROJECT_FOLDER ?>games/memory/index.php">JEU</a></li>
             <li><a href="<?= PROJECT_FOLDER ?>games/memory/score.php">LES SCORES</a></li>
             <li><a href="<?= PROJECT_FOLDER ?>contact.php">NOUS CONTACTER</a></li>
+            <li><a href="<?= PROJECT_FOLDER ?>profil.php">MON ESPACE</a></li>
         </ul>
     </nav>
 </header>

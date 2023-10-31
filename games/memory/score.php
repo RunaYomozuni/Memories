@@ -2,7 +2,7 @@
 require_once '../../utils/common.php';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <?php
         require_once SITE_ROOT.'partials/head.php';
     ?>
