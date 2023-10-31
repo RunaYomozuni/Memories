@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="assets/css/header.css">
         <link rel="stylesheet" href="assets/css/footer.css">
         <link rel="stylesheet" href="assets/css/style.css">
-	<script src="../assets/js/script.js"></script>
+	<script src="<?= PROJECT_FOLDER ?>assets/js/script.js"></script>
 
         <title>The Power Of Memory</title>
 </head>
