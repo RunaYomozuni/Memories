@@ -1,4 +1,4 @@
-<?php require_once '../../utils/common.php';
+<?php require_once 'utils/common.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
