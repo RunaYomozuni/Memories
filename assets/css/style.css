@@ -38,14 +38,30 @@ li {
     list-style: none;
 }
 
-nav a {
+/* nav a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding-top: 5px;
     font-weight: bold;
     font-size: 14px !important;
+} */
 
+.onglet-color {
+    color: orange;
+    border-top: 3px orange solid;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 14px !important;
 }
 
 nav ul a:hover {
@@ -943,12 +959,7 @@ footer {
     justify-content: space-evenly;
     color: #ec9123;
     padding-bottom: 70px;
-
 }
-.ap4{
-    padding-top: 30px;
-}
-
 
 .list-ap {
     width: 300px;

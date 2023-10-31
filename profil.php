@@ -1,4 +1,5 @@
 <?php require_once 'utils/common.php';
+$pageName = "profil";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -19,15 +20,15 @@
             <div class="espace">
                 <table class="tab-form">
                     <tr class="tr-espace">
-                        <th class="th-espace"><a class="espace-form-text" href="./profil.html">Mes infos personnelles</a></th>
+                        <th class="th-espace"><a class="espace-form-text" href="<?= PROJECT_FOLDER ?>profil.php">Mes infos personnelles</a></th>
                     </tr>
 
                     <tr class="tr-espace">
-                        <th class="th-espace"><a class="espace-form-text" href="./edit_email.html">Changer mon email</a></th>
+                        <th class="th-espace"><a class="espace-form-text" href="<?= PROJECT_FOLDER ?>views/edit_email.php">Changer mon email</a></th>
                     </tr>
                     
                     <tr class="tr-espace">
-                        <th class="th-espace"><a class="espace-form-text" href="./edit_mdp.html">Changer mon mot de passe</a></th>
+                        <th class="th-espace"><a class="espace-form-text" href="<?= PROJECT_FOLDER ?>views/edit_mdp.php">Changer mon mot de passe</a></th>
                     </tr>
                 </table>
 

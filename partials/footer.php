@@ -20,7 +20,7 @@
             </div>
 
             <div class="ap2">
-                <div class="ap4">
+                <div>
                     <p class="title-foot">Power Of Memory</p>
                     <ul class="list-ap">
                         <li><a class="underline" href="<?= PROJECT_FOLDER ?>games/memory/index.php">Jouer !</a></li>
@@ -32,6 +32,6 @@
         </div>
         <div id="contentDeepFooter">
             <p>Copyright &copy 2022 Tous droits réservés</p>
-            <a href="#top"><div id="onTop"><i class="fa-solid fa-chevron-up"></i></div></a>
+            <a href="#top"><div id="onTop"><i class="fa-solid fa-chevron-up" style="padding-top: 7px;"></i></div></a>
         </div>
     </footer>

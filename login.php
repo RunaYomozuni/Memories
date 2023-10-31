@@ -1,4 +1,5 @@
 <?php require_once 'utils/common.php';
+$pageName = "login";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -31,7 +32,7 @@
             </div>
 
             <div class="lien-inscription">
-                <p>Pas de compte ?<a class="lien" href="<?= PROJECT_FOLDER ?>register.php">Se connecter</a></p>
+                <p>Pas de compte ?<a class="lien" href="<?= PROJECT_FOLDER ?>register.php">Créer un compte</a></p>
             </div>
         </main>
 
