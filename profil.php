@@ -6,7 +6,7 @@ $pageName = "profil";
 <?php
         require_once SITE_ROOT . 'partials/head.php';
     ?>
-    <body id="profil">
+    <body "id="profil>
     <?php
         require_once SITE_ROOT . 'partials/header.php';
     ?>

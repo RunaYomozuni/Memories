@@ -1,24 +1,18 @@
 <?php require_once '../../utils/common.php';
 require_once '../../utils/database.php';
-$pdo = connectToDbAndGetPdo();
-$pdoStatement = $pdo->prepare('SELECT name_of_the_game, user_pseudo, difficulty, scored,`time`
-FROM Score AS S
-JOIN Utilisateur AS U 
-    ON U.user_id = S.user_id
-JOIN jeu AS j
-    ON S.id_game = j.id
-    
-ORDER BY name_of_the_game ASC,
-(
-    CASE difficulty
-        WHEN "facile" THEN 1
-        WHEN "normal" THEN 2
-        WHEN "difficile" THEN 3
-    END), 
-    
-    scored ASC;');
-$pdoStatement->execute();
-$score = $pdoStatement->fetchAll();
+if (!empty($_GET['searchbar'])) {
+    $pdo = connectToDbAndGetPdo();
+    $pdoStatement = $pdo->prepare('SELECT Utilisateur.user_id, id_game, difficulty, scored, "time"
+        FROM Score 
+        LEFT JOIN Utilisateur 
+        ON Utilisateur.user_id = Score.user_id 
+        WHERE user_pseudo = :pseudo
+    ');
+    $pdoStatement->execute([
+        ':pseudo' => $_GET['searchbar'],
+    ]);
+    $user_score = $pdoStatement->fetch();
+}
 
 ?>
 <!DOCTYPE html>

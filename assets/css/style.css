@@ -247,7 +247,7 @@ h1,ul {
 
 /* -- FORMULAIRE -- */
 
-.form-contact {
+#contact .form-contact {
     padding-top: 7rem;
     padding-bottom: 20rem;
     background-color: #181452;
@@ -255,7 +255,7 @@ h1,ul {
     padding-left: 217px;
 }
 
-.case-contact {
+#contact .case-contact {
     background-color: rgb(106, 99, 132);
     padding: 12px 24px;
     border: 0px solid #ccc;
@@ -266,14 +266,14 @@ h1,ul {
     padding-right: 45px;
 }
 
-.two-case {
+#contact .two-case {
     display: flex;
     flex-direction: row;
     width: 400px;
     padding-right: 20px;
 }
 
-.case-sujet {
+#contact .case-sujet {
     background-color: rgb(106, 99, 132);
     padding: 12px 24px;
     padding-right: 307px;
@@ -284,7 +284,7 @@ h1,ul {
     margin-bottom: 1.5rem;
 }
 
-.case-message {
+#contact .case-message {
     background-color: rgb(106, 99, 132);
     padding: 12px 24px;
     border: 0px solid #ccc;
@@ -293,7 +293,7 @@ h1,ul {
     opacity: 0.7;
 }
 
-.submit-contact {
+#contact .submit-contact {
     display: flex;
     width: 100px;
     background-color: #ec9123;
@@ -355,10 +355,6 @@ h1,ul {
     align-items: center;
     font-size: 25px;
 }
-
-/* .form-profil {
-    
-} */
 
 #profil .submit-profil {
     display: flex;
@@ -813,7 +809,7 @@ nav ul a:hover{
     .navElements {
         gap: 10px;
         text-align: center;
-        text-wrap: wrap;
+        /* text-wrap: wrap; */
     }
 }
 
@@ -901,9 +897,41 @@ form{
 
 /*Main page score*/
 
+.searchbar-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #181452;
+    padding-top: 70px;
+}
+
+.searchbar {
+    border: 1px solid white;
+    color: white;
+    background-color: #181452;
+    border-radius: 15px;
+    opacity: 0.7;
+    padding: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+}
+
+.searchbar-icon {
+    color: white;
+    background-color: #181452;
+    border: 1px solid white;
+    padding: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: none;
+}
+
 #score .tableau {
     background-color: #181452;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 110px;
 }
 
@@ -912,8 +940,6 @@ form{
     width: 57%;
     margin: 20px auto;
     margin-top: 70px;
-    
-    
 }
 
 #score .score_table th, td {

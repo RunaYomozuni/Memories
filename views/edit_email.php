@@ -6,7 +6,7 @@ $pageName = "edit_email";
 <?php
         require_once SITE_ROOT.'partials/head.php';
     ?>
-    <body>
+    <body id="profil">
     <?php
         require_once SITE_ROOT.'partials/header.php';
     ?>

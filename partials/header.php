@@ -84,10 +84,16 @@
             }
             ?>
 
-            <?php if ($pageName == 'edit_email') {
+            <!-- PHP CI-DESSOUS À SUPPRIMER OU REVOIR -->
+
+            <?php if ($pageName == 'profil') {
                 ?>
                 <li><a class="onglet-color" href="<?= PROJECT_FOLDER ?>profil.php"></a></li>
                 <?php
+            } elseif ($pageName == 'edit_email') {
+                ?>
+                <li><a class="onglet-color" href="<?= PROJECT_FOLDER ?>profil.php"></a></li>
+                <?php 
             } else {
                 ?>
                 <li><a href="<?= PROJECT_FOLDER ?>profil.php"></a></li>
@@ -95,7 +101,7 @@
             }
             ?>
 
-            <?php if ($pageName == 'edit_email') {
+            <?php if ($pageName == 'edit_mdp') {
                 ?>
                 <li><a class="onglet-color" href="<?= PROJECT_FOLDER ?>profil.php"></a></li>
                 <?php
@@ -107,6 +113,18 @@
             ?>
 
             <!-- CORRIGER LES LIENS (EDIT_EMAIL) et (eDIT_MDP) + RECTIFIER LR CSS -->
+
+            <?php 
+            if (isset($_SESSION["userId"])) {
+                echo "<p id='welcome'>Bienvenue" ." ". $_SESSION["userId"]["pseudo"]."</p>";
+            }
+        
+            if (!isset($_SESSION["userId"])){
+                echo "    
+                <!--BUTTON DE CONNEXION-->
+            <a href='views/login.php'><img src='/assets/img/LoginIcon.webp' alt='IconPlayer' id='login'</a>";
+            }
+            ?>
 
         </div>
     </nav>
