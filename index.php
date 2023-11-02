@@ -1,5 +1,17 @@
 <?php require_once 'utils/common.php';
-$pageName = "accueil";
+      require_once 'utils/database.php';
+      $pdo = connectToDbAndGetPdo();
+      $pdoStatement = $pdo->prepare('SELECT COUNT(*) AS user FROM Utilisateur');
+      $pdoStatement->execute();
+      $user = $pdoStatement->fetch();
+
+      $pdoStatement = $pdo->prepare('SELECT MIN(scored) AS scored FROM Score');
+      $pdoStatement->execute();
+      $scored = $pdoStatement->fetch();
+
+      $pdoStatement = $pdo->prepare('SELECT COUNT(scored) AS scoreNb FROM Score');
+      $pdoStatement->execute();
+      $allPlayed = $pdoStatement->fetch();   
 ?>
 <!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
@@ -60,10 +72,10 @@ $pageName = "accueil";
                     <img src="assets/images/purple.jpeg" alt="">
                 </div>
                 <div id="chiffreCle">
-                    <div id="parties"><span>310</span><p>Parties Jouées</p></div>
+                    <div id="parties"><span><?= $allPlayed->scoreNb ?></span><p>Parties Jouées</p></div>
                     <div id="connecter"><span>1020</span><p>Joueurs Connectés</p></div>
-                    <div id="record"><span>10 sec</span><p>Temps Record</p></div>
-                    <div id="inscrits"><span>21 300</span><p>Joueurs Inscrits</p></div>
+                    <div id="record"><span><?= $scored->scored ?>sec</span><p>Temps Record</p></div>
+                    <div id="inscrits"><span><?= $user->user ?> </span><p>Joueurs Inscrits</p></div>
                 </div>
             </div>
 
