@@ -6,7 +6,7 @@ $pageName = "profil";
 <?php
         require_once SITE_ROOT . 'partials/head.php';
     ?>
-    <body "id="profil>
+    <body id = profil>
     <?php
         require_once SITE_ROOT . 'partials/header.php';
     ?>
@@ -43,7 +43,7 @@ $pageName = "profil";
 
                         <div class="perso-name">
                             <h5>Nom</h5>
-                            <p class="perso-name-case">Last Name</p>
+                            <p class="perso-name-case">Entrez votre nom</p>
                         </div>
                     </div>
                     <div class="perso-box2">
@@ -54,7 +54,7 @@ $pageName = "profil";
 
                         <div class="perso-num">
                             <h5>Numéro</h5>
-                            <p class="perso-num-case">06 05 04 03 02</p>
+                            <p class="perso-num-case">Entrez votre numéro</p>
                         </div>
                     </div>
                 </div>

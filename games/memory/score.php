@@ -3,7 +3,7 @@ require_once '../../utils/database.php';
 $pageName = 'score';
 if (!empty($_GET['searchbar'])) {
     $pdo = connectToDbAndGetPdo();
-    $pdoStatement = $pdo->prepare('SELECT Utilisateur.user_id, Utilisateur.user_pseudo, id_game, difficulty, scored, "time"
+    $pdoStatement = $pdo->prepare('SELECT Utilisateur.user_id, Utilisateur.user_pseudo, id_game, difficulty, scored, time
         FROM Score 
         LEFT JOIN Utilisateur 
         ON Utilisateur.user_id = Score.user_id 
@@ -28,7 +28,7 @@ if (!empty($_GET['searchbar'])) {
             WHEN "facile" THEN 3
             WHEN "normal" THEN 2
             WHEN "difficile" THEN 1
-        END), 
+        END) DESC, 
 
         scored ASC;');
     $pdoStatement->execute();
@@ -65,7 +65,7 @@ require_once SITE_ROOT . 'partials/head.php';
                 <tr>
                     <th style="width:30%">Pseudo</th>
                     <th style="width:20%">Niveau de difficulté</th>
-                    <th>Temps</th>
+                    <th>Temps (score)</th>
                     <th>Date et heure</th>
                 </tr>
 
@@ -75,7 +75,7 @@ require_once SITE_ROOT . 'partials/head.php';
                             <!-- <img src="<?= PROJECT_FOLDER ?>/assets/images/1erM.png" width="30" height="30" />-->
                         </td>
                         <td><?= $row->difficulty ?></td>
-                        <td><?= $row->scored ?>S</td>
+                        <td><?= $row->scored ?>s</td>
                         <td><?= $row->time ?></td>
                     </tr>
 
