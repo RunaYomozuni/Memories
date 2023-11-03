@@ -921,6 +921,45 @@ form {
 
 /*Main page score*/
 
+.searchbar-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #181452;
+  padding-top: 70px;
+}
+
+.searchbar-box button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.searchbar {
+  border: 1px solid white;
+  color: white;
+  background-color: #181452;
+  border-radius: 15px;
+  padding: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+.searchbar-icon {
+  color: white;
+  background-color: #181452;
+  border: 1px solid white;
+  padding: 5px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: none;
+  
+}
+
 #score .tableau {
     background-color: #181452;
     padding-top: 30px;
