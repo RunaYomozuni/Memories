@@ -1,5 +1,6 @@
 <?php require_once 'utils/common.php';
 require_once 'utils/database.php';
+$pageName = 'register';
 
 $passwordPattern = '/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/';
 $namePattern = '/^{4,}$/';
@@ -14,7 +15,7 @@ if (isset($_POST['submit'])) {
 if (!empty($_POST)) {
     $pdo = connectToDbAndGetPdo();
     $pdoStatement = $pdo->prepare('INSERT INTO `Utilisateur`(`user_mail`, `user_pseudo` , `user_mdp`)VALUES(:email,:name,:password)');
-    $userHasBeenInserted = $pdoStatement->execute([
+    $pdoStatement->execute([
         ':email' => $_POST['email'],
         ':name' => $_POST['name'],
         ':password' => password_hash($_POST['password'], PASSWORD_BCRYPT),
@@ -50,7 +51,7 @@ require_once SITE_ROOT . 'partials/head.php';
             </form>
         </div>
         <div class="lien-connexion">
-            <p>Déjà un compte ?<a class="lien" href="<?= PROJECT_FOLDER ?>login.php">Créer un compte</a></p>
+            <p>Déjà un compte ?<a class="lien" href="<?= PROJECT_FOLDER ?>login.php">Connecte toi</a></p>
         </div>
     </main>
 

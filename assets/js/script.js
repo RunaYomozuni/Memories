@@ -1,7 +1,7 @@
-let start = document.getElementById("play")
-let blur = document.querySelector(".blur")
-let cartes = document.querySelectorAll("td")
-let counter = document.getElementById("timer")
+var start = document.getElementById("play")
+var blur = document.querySelector(".blur")
+var cartes = document.querySelectorAll("td")
+var counter = document.getElementById("timer")
 
 statut = false
 
