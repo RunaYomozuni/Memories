@@ -10,6 +10,8 @@ if (isset($_POST['submit'])) {
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         die();
     }
+
+    
 }
 
 if (!empty($_POST)) {
@@ -40,16 +42,25 @@ require_once SITE_ROOT . 'partials/head.php';
             <div>Inscription</div>
         </div>
 
+       
+
         <div class="identifiants">
             <!--Cors de texte de la partie des identifiants-->
             <form method="post">
                 <input class="case" type="email" id="email" name="email" placeholder="Email"><br>
                 <input class="case" type="text" id="name" name="name" placeholder="Pseudo"><br>
-                <input class="case" type="password" id="password" name="password" placeholder="Mot de passe"><br>
+                <input class="case" type="password" id="motdepasse" name="password" placeholder="Mot de passe"><br>
+                <div id="password-strength">
+                    <div id="barre"></div>
+                    <span id="weak"></span>
+                    <span id="medium"></span>
+                    <span id="strong"></span>
+                </div>
                 <input class="case" type="password" id="passwordComfirm" name="passwordConfirm" placeholder="Confirmer le mot de passe"><br>
                 <input class="submit" type="submit" name="submit" value="Inscription">
             </form>
         </div>
+
         <div class="lien-connexion">
             <p>Déjà un compte ?<a class="lien" href="<?= PROJECT_FOLDER ?>login.php">Connecte toi</a></p>
         </div>
@@ -58,6 +69,7 @@ require_once SITE_ROOT . 'partials/head.php';
     <?php
     require_once SITE_ROOT . 'partials/footer.php';
     ?>
+    <script src="assets/js/register.js"></script>
 </body>
 
 </html>

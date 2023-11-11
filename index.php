@@ -76,7 +76,7 @@ require_once SITE_ROOT . 'partials/head.php';
                     <div id="parties"><span><?= $allPlayed->scoreNb ?></span>
                         <p>Parties Jouées</p>
                     </div>
-                    <div id="connecter"><span>1020</span>
+                    <div id="connecter"><span>3</span>
                         <p>Joueurs Connectés</p>
                     </div>
                     <div id="record"><span><?= $scored->scored ?>sec</span>
